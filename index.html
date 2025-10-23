@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <title>Cosméticos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <script>
+    (function() {
+      try {
+        var saved = localStorage.getItem('theme');
+        var root = document.documentElement;
+        if (saved === 'light') {
+          root.removeAttribute('data-theme');
+        } else {
+          root.setAttribute('data-theme', 'dark');
+        }
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#inicio" class="brand-logo">
+        <img src="img/z1-(logo).jpg" alt="Cosmetics Luna Logo">
+      </a>
+      <div class="brand">Cosmetics Luna</div>
+      <nav class="nav" aria-label="Principal">
+        <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+        <ul class="nav-list">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#coleccion">Colección</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <button class="btn btn-ghost" id="theme-toggle" type="button" aria-label="Cambiar tema">☀️ Modo claro</button>
+      </nav>
+    </div>
+
+  </header>
+  <div class="container header-logo">
+    <img src="img/z1-(17).jpg" alt="Logo-Cosmetics-Luna" class="logo-Cosmetics-Luna" loading="lazy">
+  </div>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="container hero-inner">
+        <h1 class="hero-title">Brilla a tu manera</h1>
+        <p class="hero-subtitle">Cosméticos divertidos, bonitos y elegantemente formulados para ti.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#productos">Comprar ahora</a>
+          <a class="btn btn-ghost" href="#coleccion">Descubrir colección</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="bubble b1"></div>
+        <div class="bubble b2"></div>
+        <div class="bubble b3"></div>
+      </div>
+    </section>
+
+    <section id="productos" class="section products">
+      <div class="container">
+        <h2 class="section-title">Favoritos del momento</h2>
+        <div class="grid">
+          <article class="card">
+            <img src="img/z1-(5).jpg" alt="Labial Velvet" loading="lazy">
+            <div class="card-body">
+              <h3>Labial Velvet</h3>
+              <p>Color intenso, acabado suave y duradero.</p>
+              <div class="price">$18.90</div>
+              <button class="btn btn-primary">Añadir al carrito</button>
+            </div>
+          </article>
+          <article class="card">
+            <img src="img/z1-(2).jpg" alt="Paleta Rose" loading="lazy">
+            <div class="card-body">
+              <h3>Paleta Rose</h3>
+              <p>12 tonos rosas y dorados para cada ocasión.</p>
+              <div class="price">$29.90</div>
+              <button class="btn btn-primary">Añadir al carrito</button>
+            </div>
+          </article>
+          <article class="card">
+            <img src="img/z1-(3).jpg" alt="Iluminador Glow" loading="lazy">
+            <div class="card-body">
+              <h3>Brochas</h3>
+              <p>Brillo sutil con acabado perlado.</p>
+              <div class="price">$22.50</div>
+              <button class="btn btn-primary">Añadir al carrito</button>
+            </div>
+          </article>
+          <article class="card">
+            <img src="img/z1-(4).jpg" alt="Máscara Drama" loading="lazy">
+            <div class="card-body">
+              <h3>Máscara Drama</h3>
+              <p>Volumen extremo sin grumos.</p>
+              <div class="price">$16.90</div>
+              <button class="btn btn-primary">Añadir al carrito</button>
+            </div>
+          </article>
+          <article class="card">
+            <img src="img/Rubor Peony-(01).jpg" alt="Rubor Peony" loading="lazy">
+            <div class="card-body">
+              <h3>Rubor Peony</h3>
+              <p>Toque de color natural y sedoso.</p>
+              <div class="price">$14.90</div>
+              <button class="btn btn-primary">Añadir al carrito</button>
+            </div>
+          </article>
+          <article class="card">
+            <img src="img/z1-(6).jpg" alt="Serum Radiance" loading="lazy">
+            <div class="card-body">
+              <h3>Serum Radiance</h3>
+              <p>Piel luminosa con activo de vitamina C.</p>
+              <div class="price">$24.90</div>
+              <button class="btn btn-primary">Añadir al carrito</button>
+            </div>
+          </article>
+
+          <!-- Nuevos productos -->
+          <article class="card">
+            <img src="img/z1-(7).jpg" alt="Delineador Precision" loading="lazy">
+            <div class="card-body">
+              <h3>Delineador Precision</h3>
+              <p>Trazo definido y resistente al agua.</p>
+              <div class="price">$12.90</div>
+              <button class="btn btn-primary">Añadir al carrito</button>
+            </div>
+          </article>
+          <article class="card">
+            <img src="img/z1-(8).jpg" alt="Brillo Labial Crystal" loading="lazy">
+            <div class="card-body">
+              <h3>Brillo Labial Crystal</h3>
+              <p>Efecto cristal con hidratación ligera.</p>
+              <div class="price">$11.50</div>
+              <button class="btn btn-primary">Añadir al carrito</button>
+            </div>
+          </article>
+          <article class="card">
+            <img src="img/z1-(9).jpg" alt="Base Soft Matte" loading="lazy">
+            <div class="card-body">
+              <h3>Base Soft Matte</h3>
+              <p>Cobertura media con acabado natural.</p>
+              <div class="price">$27.00</div>
+              <button class="btn btn-primary">Añadir al carrito</button>
+            </div>
+          </article>
+          <article class="card">
+            <img src="img/z1-(10).jpg" alt="Corrector Bright" loading="lazy">
+            <div class="card-body">
+              <h3>Corrector Bright</h3>
+              <p>Ilumina ojeras y corrige imperfecciones.</p>
+              <div class="price">$13.90</div>
+              <button class="btn btn-primary">Añadir al carrito</button>
+            </div>
+          </article>
+          <article class="card">
+            <img src="img/z1-(11).jpg" alt="Sombra Nude" loading="lazy">
+            <div class="card-body">
+              <h3>Sombra Nude</h3>
+              <p>Textura sedosa en tonos neutros.</p>
+              <div class="price">$19.00</div>
+              <button class="btn btn-primary">Añadir al carrito</button>
+            </div>
+          </article>
+          <article class="card">
+            <img src="img/z1-(12).jpg" alt="Esmalte Rosé" loading="lazy">
+            <div class="card-body">
+              <h3>Esmalte Rosé</h3>
+              <p>Color romántico de larga duración.</p>
+              <div class="price">$8.50</div>
+              <button class="btn btn-primary">Añadir al carrito</button>
+            </div>
+          </article>
+          <article class="card">
+            <img src="img/z1-(13).jpg" alt="Perfume Roller" loading="lazy">
+            <div class="card-body">
+              <h3>Perfume Roller</h3>
+              <p>Notas florales con toque dorado.</p>
+              <div class="price">$21.90</div>
+              <button class="btn btn-primary">Añadir al carrito</button>
+            </div>
+          </article>
+          <article class="card">
+            <img src="img/z1-(11).jpg" alt="Crema Hidratante" loading="lazy">
+            <div class="card-body">
+              <h3>Crema Hidratante</h3>
+              <p>Piel suave y luminosa todo el día.</p>
+              <div class="price">$17.50</div>
+              <button class="btn btn-primary">Añadir al carrito</button>
+            </div>
+          </article>
+          <article class="card">
+            <img src="img/z1-(15).jpg" alt="Tónico Facial" loading="lazy">
+            <div class="card-body">
+              <h3>Tónico Facial</h3>
+              <p>Equilibra y refresca la piel.</p>
+              <div class="price">$12.40</div>
+              <button class="btn btn-primary">Añadir al carrito</button>
+            </div>
+          </article>
+          <article class="card">
+            <img src="img/z1-(16).jpg" alt="Exfoliante Suave" loading="lazy">
+            <div class="card-body">
+              <h3>Exfoliante Suave</h3>
+              <p>Renueva la textura sin irritar.</p>
+              <div class="price">$15.60</div>
+              <button class="btn btn-primary">Añadir al carrito</button>
+            </div>
+          </article>
+          <article class="card">
+            <img src="img/z1-(17).jpg" alt="Máscara de Arcilla" loading="lazy">
+            <div class="card-body">
+              <h3>Máscara de Arcilla</h3>
+              <p>Purifica y minimiza poros.</p>
+              <div class="price">$18.30</div>
+              <button class="btn btn-primary">Añadir al carrito</button>
+            </div>
+          </article>
+          <article class="card">
+            <img src="img/z1-(18).jpg" alt="Aceite Iluminador" loading="lazy">
+            <div class="card-body">
+              <h3>Aceite Iluminador</h3>
+              <p>Destello perlado y nutrición ligera.</p>
+              <div class="price">$23.80</div>
+              <button class="btn btn-primary">Añadir al carrito</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="coleccion" class="section collection">
+      <div class="container">
+        <h2 class="section-title">Colección Rosé Glow</h2>
+        <p class="section-subtitle">Una paleta de tonos suaves, destellos dorados y texturas ligeras que celebran tu esencia.</p>
+        <div class="features">
+          <div class="feature"><span class="icon">✨</span> Acabados luminosos</div>
+          <div class="feature"><span class="icon">🌸</span> Tonos románticos</div>
+          <div class="feature"><span class="icon">💄</span> Fórmulas cómodas</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section testimonials">
+      <div class="container">
+        <h2 class="section-title">Lo que dicen</h2>
+        <div class="quotes">
+          <blockquote>
+            <p>“Me encanta el brillo del iluminador, elegante y nada pesado.”</p>
+            <cite>— Sofía</cite>
+          </blockquote>
+          <blockquote>
+            <p>“El labial dura todo el día y los tonos son preciosos.”</p>
+            <cite>— Camila</cite>
+          </blockquote>
+          <blockquote>
+            <p>“La paleta Rose tiene el mix perfecto para día y noche.”</p>
+            <cite>— Valentina</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section newsletter">
+      <div class="container newsletter-inner">
+        <h2 class="section-title">Únete al Club Cosmetics Luna</h2>
+        <p>Recibe lanzamientos, descuentos y tips de belleza.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Tu email" required>
+          <button class="btn btn-primary" type="submit">Suscribirme</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="brand"><img src="img/z1-(logo).jpg" alt="Cosmetics Luna Logo" class="footer-logo"></div>
+      <div class="social">
+        <a href="#" aria-label="Facebook" aria-disabled="true"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+        <a href="#" aria-label="Instagram" aria-disabled="true"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+        <a href="#" aria-label="Twitter" aria-disabled="true"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+        <a href="#" aria-label="TikTok" aria-disabled="true"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
+      </div>
+      <small>© 2025 Cosmetics Luna — Hecho con amor.</small>
+    </div>
+  </footer>
+
+  <!-- Aquí está el segundo pie de página -->
+<footer class="legal-footer">
+    <div class="container">
+      <img src="img/WebComDesign.com.jpg" alt="WebCom Design" class="footer-credit-logo">
+      <div class="credit">Diseño y creación por <a href="https://webcomdesign.com" target="_blank" rel="noopener" class="credit-link">WebComDesign.com</a></div>
+      <p>Avisos legales</p>
+      <nav>
+        <a href="#">Política de privacidad</a>
+        <a href="#">Términos de servicio</a>
+      </nav>
+    </div>
+</footer>
+
+  <button id="scroll-top" class="scroll-top" type="button" aria-label="Volver arriba" aria-hidden="true">▲</button>
+  <script src="script.js"></script>
+</body>
+</html>
